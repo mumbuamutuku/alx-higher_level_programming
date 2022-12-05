@@ -30,39 +30,37 @@ listint_t *reverse_listint(listint_t **head)
  */
 int is_palindrome(listint_t **head)
 {
-    int i = 0, j;
-    size_t count = 0;
-    listint_t *front, *rear,, *tmp;
+	int i = 0, j;
+	size_t count = 0;
+	listint_t *front, *rear, *tmp;
 
-    if (*head == NULL || (*head)->next == NULL)
-        return (1);
+	if (*head == NULL || (*head)->next == NULL)
+		return (1);
+	tmp = *head;
+	while (tmp)
+	{
+		count++;
+		tmp = tmp->next;
+	}
+	tmp = *head;
+	for (j = 0; j < (count / 2) - 1; j++)
+	{
+		tmp = tmp->next;
+	}
+	if ((count % 2) == 0 && tmp->n != tmp->next->n)
+		return (0);
+	tmp = tmp->next->next;
+	rear = reverse_listint(&tmp);
+	front = rear;
 
-    tmp = *head;
-    while (tmp)
-    {
-        count++;
-        tmp = tmp->next;
-    }
-    tmp = *head;
-    for (j = 0; j < (count / 2) - 1; j++)
-    {
-        tmp = tmp->next;
-    }
-    if ((count % 2) == 0 && tmp->n != tmp->next->n)
-        return 0;
-
-    tmp = tmp->next->next;
-    rear = reverse_listint(&tmp);
-    front = rear;
-
-    tmp = *head;
-    while (rear)
-    {
-        if (tmp->n != rear->n)
-            return (0);
-        tmp = tmp->next;
-        rear = rear->next;
-    }
-    reverse_listint(&front);
-    return (1);
+	tmp = *head;
+	while (rear)
+	{
+		if (tmp->n != rear->n)
+			return (0);
+		tmp = tmp->next;
+		rear = rear->next;
+	}
+	reverse_listint(&front);
+	return (1);
 }
