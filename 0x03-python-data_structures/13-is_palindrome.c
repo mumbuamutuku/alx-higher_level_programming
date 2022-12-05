@@ -30,8 +30,7 @@ listint_t *reverse_listint(listint_t **head)
  */
 int is_palindrome(listint_t **head)
 {
-	int i = 0, j;
-	size_t count = 0;
+	size_t count = 0, j;
 	listint_t *front, *rear, *tmp;
 
 	if (*head == NULL || (*head)->next == NULL)
