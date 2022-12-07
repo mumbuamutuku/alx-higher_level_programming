@@ -9,4 +9,5 @@ def http_error(status):
             return "I'm a teapot"
         case _:
             return "Something's wrong with the internet"
-http_error(402)
+
+print(http_error(400))
