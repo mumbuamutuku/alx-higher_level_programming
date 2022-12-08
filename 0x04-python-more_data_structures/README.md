@@ -22,5 +22,7 @@
 
 **10-best_score.py** -Write a function that returns a key with the biggest integer value.
 
+**11-multiply_list_map.py** - Write a function that returns a list with all values multiplied by a number without using any loops.
 
+**12-roman_to_int.py**
 
