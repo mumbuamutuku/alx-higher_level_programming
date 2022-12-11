@@ -28,3 +28,4 @@
 
 **100-weight_average.py** - Write a function that returns the weighted average of all integers tuple (<score>, <weight>)
 
+**101-square_matrix_map.py**- Write a function that computes the square value of all integers of a matrix using map
