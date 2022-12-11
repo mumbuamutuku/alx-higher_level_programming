@@ -1,4 +1,4 @@
-#### Higher-level programming - Python, Databases & JavaScript
+# Higher-level programming - Python, Databases & JavaScript
 
 This repository contains programs written for higher-level programming at ALX Africa Software Programming Course.
 It contains:
