@@ -16,3 +16,5 @@ You are not allowed to cast the variable number into a string
 Your code must be 3 lines long
 You have to use f-strings tips
 
+**100-write.py** - Write a Python script that prints exactly and that piece of art is useful - Dora Korpar, 2015-10-19, followed by a new line.
+
