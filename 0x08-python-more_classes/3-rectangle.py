@@ -52,7 +52,6 @@ class Rectangle:
         """print the rectangle wth the # character"""
         if self.__height == 0 or self.__width == 0:
             return ("")
-
         else:
             line = '#' * self.__width
             rectangle = (line + '\n') * (self.__height - 1) + line
