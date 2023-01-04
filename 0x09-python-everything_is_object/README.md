@@ -162,3 +162,4 @@ Will the last line of this script print 139926795932424? Answer with Yes or No.
 >>> id(a)
 Will the last line of this script print 139926795932424? Answer with Yes or No.
 
+**101-locked_class.py**
