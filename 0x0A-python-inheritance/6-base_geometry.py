@@ -1,7 +1,11 @@
 #!/usr/bin/python3
-"""Define an empty class"""
+"""Define a class"""
 
 
 class BaseGeometry:
-    """define empty class"""
-    pass
+    """public instance method area
+
+    Raises:
+        Exception with the message area() is not implemented"""
+    def area(self):
+        raise Exception("area() is not implemented")
