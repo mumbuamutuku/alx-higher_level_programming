@@ -1,0 +1,6 @@
+-- Lists all records having a name value
+-- Records are ordered by descending score
+SELECT 'score', 'name'
+FROMM 'second_table'
+WHERE 'name' != ""
+ORDER BY 'score' DESC;
