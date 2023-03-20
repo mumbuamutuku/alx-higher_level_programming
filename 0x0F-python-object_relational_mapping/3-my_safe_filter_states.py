@@ -12,4 +12,3 @@ if __name__ == '__main__':
             print(state)
     commands.close()
     the_usa.close()
-

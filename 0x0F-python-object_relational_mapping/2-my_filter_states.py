@@ -1,8 +1,9 @@
 #!/usr/bin/python3
-# Lists all states from the database hbtn_0e_0_usa.
-# Usage: ./2-my_filter_states.py <mysql username> \
-#                             <mysql password> \
-#                             <database name>
+""" Lists all states from the database hbtn_0e_0_usa.
+    Usage: ./2-my_filter_states.py <mysql username> \
+                            <mysql password> \
+                            <database name>
+"""
 from sys import argv
 import MySQLdb
 
@@ -18,4 +19,3 @@ if __name__ == "__main__":
             print(state)
     c.close()
     db.close()
-
