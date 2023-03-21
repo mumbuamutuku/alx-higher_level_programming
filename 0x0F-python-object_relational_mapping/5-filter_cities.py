@@ -16,7 +16,7 @@ if __name__ == '__main__':
     commands = the_usa.cursor()
     commands.execute("SELECT cities.id, cities.name, states.name FROM\
     cities JOIN states ON cities.state_id = states.id\
-    ORDER BY cities.id ASC") 
+    ORDER BY cities.id ASC")
     us = commands.fetchall()
     coma = 0
     for state in us:
@@ -28,4 +28,3 @@ if __name__ == '__main__':
     print("")
     commands.close()
     the_usa.close()
-
